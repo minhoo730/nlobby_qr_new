@@ -4,31 +4,32 @@
 /* css reset */
 html, body{width:100%; height:100%; margin:0; padding:0; font-size:10px;}
 body{font-family:'NotoSansKR',sans-serif; position:absolute;}
-html, header, section, footer, body, header, footer, p, a, h1, h2, h3, h4, h5, h6, div, span, strong, ul, li, dl, dt, dd, table, tr, td, b, input, button, label, b, textarea, select, option{margin:0; padding:0; color:#333; text-decoration:blink; letter-spacing:-1.5px; font-family:'NotoSansKR',sans-serif; list-style:none;}
+html, header, section, footer, body, header, footer, p, a, h1, h2, h3, h4, h5, h6, div, span, strong, ul, li, dl, dt, dd, table, tr, td, b, input, button, label, b, textarea, select, option{margin:0; padding:0; color:#333; text-decoration:blink; letter-spacing:-1.0px; font-family:'NotoSansKR',sans-serif; list-style:none;}
 button{cursor:pointer; outline:unset;}
 textarea{outline:unset; resize: none;}
 b{font-weight:600;}
 #wrap{width:100%; height:100%;overflow:hidden;}
 #wrap.sub_wrap{overflow:auto;}
-header{width:100%; height:80px; position:fixed; background:#fff; box-shadow:0px 0px 14px 0 rgb(0 0 0 / 15%); z-index:999;}
-header .setup{position:absolute;left:30px;top:15px;width:50px;height:50px;}
-header .setup a{font-size:4.0rem; line-height:0;display: flex;width:100%;height:100%;justify-content: center;align-items: center; border-radius:50px;}
-header .company_name{width:100%; height:80px; display:table; text-align:center;}
+header{width:100%; height:60px; position:fixed; background:#fff; box-shadow:0px 0px 14px 0 rgb(0 0 0 / 15%); z-index:999;}
+header .setup{position:absolute;left:30px;top:5px;width:50px;height:50px;}
+header .setup a{font-size:3.0rem; line-height:0;display: flex;width:100%;height:100%;justify-content: center;align-items: center; border-radius:50px;}
+header .company_name{width:100%; height:60px; display:table; text-align:center;}
 header .company_name h4{font-size:1.6rem; display:table-cell; vertical-align:middle;}
-header .language{position:absolute; top:20px; right:30px; display:flex; align-items:center; border-radius:50px; overflow:hidden;}
+header .company_name h4 img{width:75px;}
+header .language{position:absolute; top:15px; right:30px; display:flex; align-items:center; border-radius:50px; overflow:hidden;}
 header .language .lang_ico{font-size:3.0rem; margin-right:25px;}
-header .language .lang_btn{font-size:1.8rem; font-weight:500; margin-right:0px;}
-header .language .lang_btn a{display:block; background:#f2f2f2; padding:5px 20px;}
+header .language .lang_btn{font-size:1.4rem; font-weight:500; margin-right:0px;}
+header .language .lang_btn a{display:block; background:#f2f2f2; padding:5px 15px;}
 header .language .lang_btn.on a{background:#849c23; color:#fff;}
 header .language .ko_btn{margin-right:0;}
 
 /* 서브페이지 뒤로가기 버튼 */
-header .back_btn{position:absolute; left:30px; top:15px; width:50px; height:50px;}
+header .back_btn{position:absolute; left:30px; top:6px; width:50px; height:50px;}
 header .back_btn a{font-size: 4.0rem; line-height: 0; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; border-radius: 50px;}
 header .back_btn a i{margin-right:7px;}
 
 
-#content{position:relative; height:calc(100% - 80px); display:flex; align-items: center; justify-content: center; padding-top:80px;}
+#content{position:relative; height:calc(100% - 60px); display:flex; align-items: center; justify-content: center; padding-top:60px;}
 #content .main_button{display:flex;text-align:center;align-items: stretch;position:relative; width:100%; height:100%; justify-content: center;}
 .main_button p{width:50%; display: flex; transition:0.3s all;justify-content: center; align-items: center;}
 .main_button p a{background:#fff; display: flex; color:#333; width: 100%; height: 100%; font-size:2.6rem; font-weight:400; flex-direction: column;justify-content: center; align-items: center;}
@@ -59,60 +60,65 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 
 
 /* 방문등록 확인 폼 */
-#form_content{margin:0 auto; width:100%; padding-top:80px;}
+#form_content{margin:0 auto; width:100%; padding-top:60px;}
 .sub_wrap #form_content{margin:0px auto;}
-.visit_check{padding:0 40px;}
-.sub_title{font-size:2.4rem; color:#333; margin-top:30px; margin-bottom:10px;}
+.visit_check{padding:0 20px;}
+.sub_title{font-size:1.8rem; color:#333; margin-top:20px; margin-bottom:10px;}
 .visit_form{display:flex; align-items:center; width:100%;}
 .visit_form > div{display:flex; flex-wrap: wrap; flex-direction: row; width:100%;}
 .visit_form .left_form{padding-right:0;}
 .visit_form .right_form{padding-left:0; margin-left:10px;}
 .visit_form > div > div{display:flex; width:100%; margin:2px 0;}
-.visit_form > div > div p{width:100%; max-width:30%; font-size:1.4rem; font-weight:300; padding:5px 0; background:#f5f5f5; color:#98a4a5; margin-right:5px; text-indent:10px}
-.visit_form > div > div input[type="text"]{width:100%; max-width:70%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.6rem; font-weight:300; text-indent:10px;}
+.visit_form > div > div p{width:100%; max-width:50%; font-size:1.2rem; font-weight:300; padding:5px 0; background:#f5f5f5; color:#98a4a5; margin-right:5px; text-indent:10px}
+.visit_form > div > div input[type="text"]{width:100%; max-width:50%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.2rem; font-weight:300; text-indent:10px;}
 
 /* 반입 물품 선택 박스 */
-.check_list{display:flex; width:100%; padding-bottom:30px; border-bottom:1px solid #333; align-items: center; justify-content: center;}
-.list_title{margin-top:20px; margin-bottom:10px; font-size:2.0rem;}
+.check_list{display:flex; width:100%; padding-bottom:20px; border-bottom:1px solid #333; align-items: center; justify-content: center;}
+.list_title{margin-top:20px; margin-bottom:10px; font-size:1.4rem;}
 .carry_in{width:100%;}
 .carry_out{width:100%;}
-.carry{display:flex; align-items: center; justify-content: space-between; width:100%; margin-top:30px;}
+.carry{display:flex; align-items: center; justify-content: space-between; width:100%}
 .carry p{font-size:1.6rem; width:100%; margin-right:10px; text-align:center;}
 .carry p:last-child{margin-right:0;}
 .carry p input[type="checkbox"]{display:none;}
 .carry p label{cursor:pointer;}
-.carry p label.carry_bg{width:90px; height:90px; display:inline-block; border-radius:50px; position:relative; display:flex; justify-content: center; align-items: center; margin:auto;}
-.carry p label.carry_name{margin-top:10px;}
+.carry p label.carry_bg{width:60px; height:60px; display:inline-block; border-radius:50px; position:relative; display:flex; justify-content: center; align-items: center; margin:auto;}
+.carry p label.carry_name{margin-top:5px;}
 .carry_list .checkbox + label svg .carry_bg_img{fill: #333;}
 .carry_list .checkbox + label{background-color:#f5f5f5; color:#333;}
 .carry_list .checkbox:checked + label{background-color:#849c23;}
 .carry_list .checkbox:checked + label svg .carry_bg_img{fill: #fff;}
-.carry_name{display:block; text-align:center; font-size:1.6rem;}
-
-
+.carry_name{display:block; text-align:center; font-size:1.2rem;}
+.privacy_check > p{font-size: 1.2rem; font-weight: 500; color: #333; display: block; padding: 5px 0;}
 .carry_out{margin-left:10px;}
-.privacy{padding:0 40px; margin-top:30px;}
-.privacy p{font-size:1.6rem;}
-.privacy_title{font-size:2.0rem; margin-bottom:10px;}
-.privacy .sub_title{padding-left:0; margin:0; margin-bottom:10px;}
-.privacy_security{display:flex; width:100%; align-items: flex-start; justify-self:center; margin-top:30px; position:relative;}
+.privacy{padding:0 20px; margin-top:20px;}
+
+.privacy .sign{font-size:1.2rem;}
+.privacy_title{font-size:1.4rem; margin-bottom:10px;}
+.privacy_security{display:flex; width:100%; align-items: flex-start; justify-self:center; margin-top:20px; position:relative;}
 .privacy_security > div{width:100%;}
-.privacy_txt, .security_txt{display:inline-block; height:220px;}
-.privacy_txt p, .security_txt p{font-size:1.6rem; line-height:3.0rem;}
+.privacy_use {width: 100%; margin-right: 10px;}
+.privacy_txt, .security_txt{display:inline-block; height:150px; overflow-y:auto;}
+.privacy_txt p, .security_txt p{font-size:1.2rem; line-height:2.2rem;}
 /* .privacy_check{position:absolute; bottom:0;} */
 
-.privacy_check .privacy_agree{display:flex; justify-content:center; align-items:center; margin-top:20px; width:100%;}
+.privacy_check .privacy_agree{display:flex; justify-content:left; align-items:center; width:100%;}
 .privacy_agree p{font-size:1.4rem; font-weight:300; padding:5px 0; width:100%; background:#f5f5f5; color:#98a4a5; margin-right:5px; text-indent:10px;}
 .privacy_agree input[type="text"]{width:100%; max-width:70%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.6rem; font-weight:300; text-indent:10px;}
-.privacy_agree label{padding-right:10px; margin-left:5px; font-size:1.6rem; font-weight:400;}
+.privacy_agree label{padding-right:10px; margin-left:5px; font-size:1.2rem; font-weight:400;}
+.privacy_check > div label{margin-left:0;}
+.check{position: relative; display: inline-block; border:1px solid #f5f5f5; margin-right: 2px; text-align:center; width:100%; border-radius:50px; overflow:hidden;}
+.check input{display:none;}
+.check + label{background-color:#f5f5f5; color:#333;}
+.check .checkbox:checked + label{background-color:#849c23; color:#fff; display:block;}
 
 .sign_form{display:flex; justify-content: center; align-items: center; margin:30px 0;}
 .sign_form > div{width:100%;}
 .agree_data h4{font-size:2.0rem; text-align:center; font-weight:500;}
-.agree_sign{width:100%; background:#fefee5; display:flex;  justify-content: center; align-items: center; text-align:center; height:200px;}
+.agree_sign{width:100%; background:#fefee5; display:flex;  justify-content: center; align-items: center; text-align:center; height:180px;}
 .sign_area p{color:#cccccc; font-size:1.6rem; font-weight:400; margin-bottom:10px;}
 .sign_area h4{color:#999999; font-size:2.0rem; font-weight:500;}
-.visit_add{width:200px; margin:70px auto; display:block; background:#3a73cf; color:#fff; border:none; padding:15px 0; border-radius:5px; font-size:1.6rem; text-align:center;}
+.visit_add{width:200px; margin:30px auto; display:block; background:#3a73cf; color:#fff; border:none; padding:15px 0; border-radius:5px; font-size:1.6rem; text-align:center;}
 .visit_add i{font-size:2.2rem; margin-right:10px;}
 
 /* 환경설정 */
@@ -151,18 +157,18 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
   .main_button .icon_area{font-size:5rem;}
   .main_button .icon_area .arrow_left, .main_button .icon_area .arrow_right {font-size:3rem;}
   .main_button .check_point .icon_area i{font-size:10rem;}
-  .privacy_security{flex-direction: column; height:auto;}
-  .privacy_check{position:relative; margin-top:30px;}
+  /* .privacy_security{flex-direction: column; height:auto;} */
   .sign_form{flex-direction: column; height:auto; margin:0;}
-  .agree_data{margin:30px 0;}
-  .carry{flex-direction: column;}
-  .carry p{margin:3px 0; padding:0; position:relative;}
+  .agree_data{margin:40px 0;}
+  .carry{flex-wrap: wrap;}
+  .carry p{margin:0; padding:0; position:relative; width:25%;}
   .carry p input[type="checkbox"]{position:absolute; left:15px; top:22px;}
-  .carry p label{width:100%; display:block; padding:15px 0 15px 30px;}
+  .carry p label{width:100%; display:block;}
 }
 
 @media screen and (max-width:768px){
-  #content .main_button{height:200px; top:-60px;}
+  #content .main_button{width:100%; height:100%; align-items: center; flex-direction: column;}
+  #content .main_button p{width:100%; height:100%;}
   .main_button p i.build_common{font-size:7rem;}
   .main_button .check_point .icon_area i{font-size:7rem;}
   .main_button p a{font-size:1.6rem;}

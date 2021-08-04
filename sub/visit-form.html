@@ -11,6 +11,7 @@
     <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
     <script type="text/JavaScript" src="../js/script.js"></script>
   </head>
+
   <body>
     <div id="wrap" class="sub_wrap">
       <header>
@@ -109,7 +110,7 @@
               </div>
             </div>
             <div class="carry_out">
-              <h4 class="list_title">반출할 물품을 선택하세요.</h4>
+              <h4 class="list_title">보관할 물품을 선택하세요.</h4>
               <div class="carry">
                 <p class="carry_list carry_phone">
                   <input type="checkbox" value="휴대전화" id="carry_phone2" class="checkbox" />
@@ -162,7 +163,7 @@
         </div>
         <div class="privacy">
           <h2 class="sub_title">개인정보보호법 시행 안내</h2>
-          <p>0000년 00월 00일 시행된 개인정보보호법에 따라, 방문시 개인정보 수집 및 이용에 대한 동의와 보안 서약 동의를 받고 있습니다. 당사의 경우 전산 / 영상장비 / 저장매체의 반입이 금지되어 있으니 불편하시더라도 협조 부탁드립니다.</p>
+          <p class="sign">0000년 00월 00일 시행된 개인정보보호법에 따라, 방문시 개인정보 수집 및 이용에 대한 동의와 보안 서약 동의를 받고 있습니다. 당사의 경우 전산 / 영상장비 / 저장매체의 반입이 금지되어 있으니 불편하시더라도 협조 부탁드립니다.</p>
           <div class="privacy_security">
             <div class="privacy_use">
               <h4 class="privacy_title">개인정보 수집 및 이용</h4>
@@ -176,16 +177,16 @@
               <div class="privacy_check">
                 <p class="agree_txt">위의 내용을 이해하고 확인하였습니다.</p>
                 <div class="privacy_agree">
-                  <p>
+                  <div class="check">
                     <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
-                    <input type="checkbox" value="동의" id="agree1" class="checkbox" name="agree" onclick="" />
+                    <input type="radio" value="동의" id="agree1" class="checkbox" name="agree" onclick="" />
                     <label for="agree1">동의</label>
-                  </p>
-                  <p>
+                  </div>
+                  <div class="check">
                     <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
-                    <input type="checkbox" value="미동의" id="unconsent1" class="checkbox" onclick="" />
+                    <input type="radio" value="미동의" id="unconsent1" class="checkbox" onclick="" />
                     <label for="unconsent1">미동의</label>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -200,16 +201,16 @@
               <div class="privacy_check">
                 <p class="agree_txt">위의 내용을 이해하고 확인하였습니다.</p>
                 <div class="privacy_agree">
-                  <p>
+                  <div class="check">
                     <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
-                    <input type="checkbox" id="agree2" name="agree2" class="checkbox" onclick="" />
+                    <input type="radio" id="agree2" name="agree2" class="checkbox" onclick="" />
                     <label for="agree2">동의</label>
-                  </p>
-                  <p>
+                  </div>
+                  <div class="check">
                     <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
-                    <input type="checkbox" id="unconsent2" class="checkbox" name="agree2" onclick="" />
+                    <input type="radio" id="unconsent2" class="checkbox" name="agree2" onclick="" />
                     <label for="unconsent2">미동의</label>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
