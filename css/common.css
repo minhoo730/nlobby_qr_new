@@ -67,7 +67,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .visit_form{display:flex; align-items:center; width:100%;}
 .visit_form > div{display:flex; flex-wrap: wrap; flex-direction: row; width:100%;}
 .visit_form .left_form{padding-right:0;}
-.visit_form .right_form{padding-left:0; margin-left:10px;}
+.visit_form .right_form{padding-left:0; margin-left:20px;}
 .visit_form > div > div{display:flex; width:100%; margin:2px 0;}
 .visit_form > div > div p{width:100%; max-width:50%; font-size:1.2rem; font-weight:300; padding:5px 0; background:#f5f5f5; color:#98a4a5; margin-right:5px; text-indent:10px}
 .visit_form > div > div input[type="text"]{width:100%; max-width:50%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.2rem; font-weight:300; text-indent:10px;}
@@ -90,14 +90,14 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .carry_list .checkbox:checked + label svg .carry_bg_img{fill: #fff;}
 .carry_name{display:block; text-align:center; font-size:1.2rem;}
 .privacy_check > p{font-size: 1.2rem; font-weight: 500; color: #333; display: block; padding: 5px 0;}
-.carry_out{margin-left:10px;}
+.carry_out{margin-left:20px;}
 .privacy{padding:0 20px; margin-top:20px;}
 
 .privacy .sign{font-size:1.2rem;}
 .privacy_title{font-size:1.4rem; margin-bottom:10px;}
 .privacy_security{display:flex; width:100%; align-items: flex-start; justify-self:center; margin-top:20px; position:relative;}
 .privacy_security > div{width:100%;}
-.privacy_use {width: 100%; margin-right: 10px;}
+.privacy_use {margin-right:20px;}
 .privacy_txt, .security_txt{display:inline-block; height:150px; overflow-y:auto;}
 .privacy_txt p, .security_txt p{font-size:1.2rem; line-height:2.2rem;}
 /* .privacy_check{position:absolute; bottom:0;} */
@@ -106,8 +106,11 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .privacy_agree p{font-size:1.4rem; font-weight:300; padding:5px 0; width:100%; background:#f5f5f5; color:#98a4a5; margin-right:5px; text-indent:10px;}
 .privacy_agree input[type="text"]{width:100%; max-width:70%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.6rem; font-weight:300; text-indent:10px;}
 .privacy_agree label{padding-right:10px; margin-left:5px; font-size:1.2rem; font-weight:400;}
+.privacy_agree .check{margin-right:20px;}
+.privacy_agree .check:last-child{margin:0;}
 .privacy_check > div label{margin-left:0; display:block; padding:5px 0;}
-.check{position: relative; display: inline-block; border:1px solid #f5f5f5; margin-right: 2px; text-align:center; width:100%; border-radius:50px; overflow:hidden;}
+.check{position: relative; display: inline-block; border:1px solid #e9e9e9; margin-right: 2px; text-align:center; width:100%; border-radius:50px; overflow:hidden;}
+.privacy_check > div label i{margin-right:10px; font-size:1.4rem;}
 .check input{display:none;}
 .check + label{background-color:#f5f5f5; color:#333;}
 .check .checkbox:checked + label{background-color:#849c23; color:#fff;}
@@ -118,7 +121,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .agree_sign{width:100%; background:#fefee5; display:flex;  justify-content: center; align-items: center; text-align:center; height:180px;}
 .sign_area p{color:#cccccc; font-size:1.6rem; font-weight:400; margin-bottom:10px;}
 .sign_area h4{color:#999999; font-size:2.0rem; font-weight:500;}
-.visit_add{width:200px; margin:30px auto; display:block; background:#3a73cf; color:#fff; border:none; padding:15px 0; border-radius:5px; font-size:1.6rem; text-align:center;}
+.visit_add{width:100%; max-width:700px; margin:30px auto; display:block; background:#849c23; color:#fff; border:none; padding:15px 0; border-radius:50px; font-size:1.6rem; text-align:center;}
 .visit_add i{font-size:2.2rem; margin-right:10px;}
 
 /* 환경설정 */
