@@ -16,7 +16,7 @@ header .setup a{font-size:3.0rem; line-height:0;display: flex;width:100%;height:
 header .company_name{width:100%; height:60px; display:table; text-align:center;}
 header .company_name h4{font-size:1.6rem; display:table-cell; vertical-align:middle;}
 header .company_name h4 img{width:75px;}
-header .language{position:absolute; top:15px; right:10px; display:flex; align-items:center; border-radius:50px; overflow:hidden;}
+header .language{position:absolute; top:15px; right:20px; display:flex; align-items:center; border-radius:50px; overflow:hidden;}
 header .language .lang_ico{font-size:3.0rem; margin-right:25px;}
 header .language .lang_btn{font-size:1.4rem; font-weight:500; margin-right:0px;}
 header .language .lang_btn a{display:block; background:#f2f2f2; padding:5px 15px;}
