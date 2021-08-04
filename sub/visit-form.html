@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엔로비 QR버전</title>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- Jquery 추가_21.07.27 -->
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/JavaScript" src="../js/script.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap" class="sub_wrap">
+      <header>
+        <div class="back_btn">
+          <a href="javascript:history.back();"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="company_name">
+          <h4><img src="../img/logo.svg"></h4>
+        </div>
+        <div class="language">
+          <!--
+                <p class="lang_ico"><i class="fa fa-language" aria-hidden="true"></i></p>
+              -->
+          <p class="en_btn lang_btn on"><a href="#">KO</a></p>
+          <p class="ko_btn lang_btn"><a href="#">EN</a></p>
+        </div>
+      </header>
+      <div id="form_content">
+        <div class="visit_check">
+          <h2 class="sub_title">방문등록 확인</h2>
+          <div class="visit_form">
+            <div class="left_form">
+              <div class="check_number">
+                <p>예약번호</p>
+                <input type="text" value="123456" disabled />
+              </div>
+              <div class="user_name">
+                <p>방문자</p>
+                <input type="text" value="123456" disabled />
+              </div>
+              <div class="user_car">
+                <p>차량번호</p>
+                <input type="text" value="123456" disabled />
+              </div>
+            </div>
+            <div class="right_form">
+              <div class="check_number">
+                <p>예약기간</p>
+                <input type="text" value="123456" disabled />
+              </div>
+              <div class="user_name">
+                <p>방문대상</p>
+                <input type="text" value="123456" disabled />
+              </div>
+              <div class="user_car">
+                <p>방문장소</p>
+                <input type="text" value="123456" disabled />
+              </div>
+            </div>
+          </div>
+          <div class="check_list">
+            <div class="carry_in">
+              <h4 class="list_title">반입할 물품을 선택하세요.</h4>
+              <div class="carry">
+                <p class="carry_list carry_phone">
+                  <input type="checkbox" value="휴대전화" id="carry_phone" class="checkbox"/>
+                  <label for="carry_phone" class="carry_bg">
+                    <svg width="23.921" height="38.316">
+                      <path class="carry_bg_img" d="M-2903.874,270.334a5.42,5.42,0,0,1-5.341-5.17.713.713,0,0,1-.016-.152c0-.02,0-.038.005-.058,0-.039-.005-.077-.005-.116V238.514a5.434,5.434,0,0,1,5.357-5.5h12.207a5.434,5.434,0,0,1,5.358,5.5v26.325c0,.039-.005.077-.006.116,0,.02.006.038.006.058a.764.764,0,0,1-.016.152,5.421,5.421,0,0,1-5.342,5.17Zm0-1.476h12.207a3.918,3.918,0,0,0,3.776-3.108h-19.76A3.918,3.918,0,0,0-2903.874,268.858Zm-3.881-4.585h19.968V239.8h-19.968Zm.009-25.951h19.95a3.947,3.947,0,0,0-3.872-3.829h-12.207A3.947,3.947,0,0,0-2907.746,238.323Zm9.2-1.228a.738.738,0,0,1-.738-.738.738.738,0,0,1,.738-.738h2.014a.738.738,0,0,1,.738.738.738.738,0,0,1-.738.738Z" transform="translate(2909.731 -232.518)" />
+                    </svg>
+                  </label>
+                  <label for="carry_phone" class="carry_name">휴대전화</label>
+                </p>
+                <p class="carry_list carry_note">
+                  <input type="checkbox" value="노트북" id="carry_note" class="checkbox"/>
+                  <label for="carry_note" class="carry_bg">
+                    <svg width="40" height="26.888">
+                      <path class="carry_bg_img"
+                        d="M-2000.763,361.668a2.233,2.233,0,0,1-2.23-2.23v-.032a2.233,2.233,0,0,1,2.23-2.231h.873V340.1a4.328,4.328,0,0,1,4.323-4.323h24.8a4.328,4.328,0,0,1,4.323,4.323v17.071h.22a2.233,2.233,0,0,1,2.23,2.231v.032a2.233,2.233,0,0,1-2.23,2.23Zm-.963-2.263v.032a.964.964,0,0,0,.963.963h34.539a.964.964,0,0,0,.964-.963v-.032a.964.964,0,0,0-.964-.964h-34.539A.964.964,0,0,0-2001.726,359.405Zm3.1-19.3v17.071h30.912V340.1a3.059,3.059,0,0,0-3.055-3.056h-24.8A3.059,3.059,0,0,0-1998.623,340.1Zm1.922.076a.633.633,0,0,1-.633-.634.633.633,0,0,1,.633-.634h26.414a.634.634,0,0,1,.634.634.634.634,0,0,1-.634.634Z" transform="translate(2003.493 -335.28)" />
+                    </svg>
+                  </label>
+                  <label for="carry_note" class="carry_name">노트북</label>
+                </p>
+                <p class="carry_list carry_camera">
+                  <input type="checkbox" value="카메라" id="carry_camera" class="checkbox"/>
+                  <label for="carry_camera" class="carry_bg">
+                    <svg width="34.615" height="29.649" viewBox="0 0 34.615 29.649">
+                    <path class="carry_bg_img"
+                        d="M-6180.84,568.093a2.487,2.487,0,0,1-2.322-2.619v-17.6a2.487,2.487,0,0,1,2.322-2.619h5.965l1.656-4.236a2.469,2.469,0,0,1,2.313-1.578h9.1a2.466,2.466,0,0,1,2.312,1.578l1.657,4.236h5.965a2.487,2.487,0,0,1,2.322,2.619v17.6a2.487,2.487,0,0,1-2.322,2.619Zm-1.076-20.215v17.6a1.254,1.254,0,0,0,1.076,1.373h28.971a1.254,1.254,0,0,0,1.076-1.373v-17.6a1.254,1.254,0,0,0-1.076-1.375h-6.215a.608.608,0,0,1-.167.023.619.619,0,0,1-.167-.023h-15.873a.623.623,0,0,1-.168.023.612.612,0,0,1-.167-.023h-6.214A1.254,1.254,0,0,0-6181.916,547.878Zm22.744-2.619-1.479-3.782a1.23,1.23,0,0,0-1.153-.788h-9.1a1.233,1.233,0,0,0-1.154.788l-1.479,3.782Zm-14.819,11.416a7.644,7.644,0,0,1,7.636-7.635,7.643,7.643,0,0,1,7.634,7.635,7.643,7.643,0,0,1-7.634,7.636A7.645,7.645,0,0,1-6173.99,556.675Zm1.246,0a6.4,6.4,0,0,0,6.391,6.39,6.4,6.4,0,0,0,6.39-6.39,6.4,6.4,0,0,0-6.39-6.389A6.4,6.4,0,0,0-6172.745,556.675Zm15.785-6.389a.623.623,0,0,1-.622-.624.622.622,0,0,1,.622-.622h3.143a.623.623,0,0,1,.624.622.624.624,0,0,1-.624.624Z"
+                        transform="translate(6183.662 -538.945)" />
+                    </svg>
+                  </label>
+                  <label for="carry_camera" class="carry_name">카메라</label>
+                </p>
+                <p class="carry_list carry_hdd">
+                  <input type="checkbox" value="저장메체" id="carry_hdd" class="checkbox"/>
+                  <label for="carry_hdd" class="carry_bg">
+                    <svg width="15.307" height="29.904">
+                      <path class="carry_bg_img"
+                        d="M-3222.142,148.568a6.95,6.95,0,0,1-6.92-6.935V127.35a.755.755,0,0,1,.735-.748h1.216V120.33a.686.686,0,0,1,.706-.665h9.024a.685.685,0,0,1,.675.7V126.6h1.216a.756.756,0,0,1,.735.748v14.283a6.951,6.951,0,0,1-6.921,6.935Zm-5.475-6.935a5.5,5.5,0,0,0,5.475,5.49h.466a5.5,5.5,0,0,0,5.476-5.49V128.048h-11.417Zm1.95-15.031h7.515V121.11h-7.515Zm4.625-1.837V122.9a.722.722,0,0,1,.722-.723.723.723,0,0,1,.723.723v1.866a.722.722,0,0,1-.723.723A.722.722,0,0,1-3221.042,124.765Zm-3.18,0V122.9a.723.723,0,0,1,.723-.723.723.723,0,0,1,.723.723v1.866a.723.723,0,0,1-.723.723A.723.723,0,0,1-3224.221,124.765Z"
+                        transform="translate(3229.563 -119.165)" />
+                    </svg>
+                  </label>
+                  <label for="carry_hdd" class="carry_name">저장메체</label>
+                </p>
+              </div>
+            </div>
+            <div class="carry_out">
+              <h4 class="list_title">반출할 물품을 선택하세요.</h4>
+              <div class="carry">
+                <p class="carry_list carry_phone">
+                  <input type="checkbox" value="휴대전화" id="carry_phone2" class="checkbox" />
+                  <label for="carry_phone2" class="carry_bg">
+                    <svg width="23.921" height="38.316">
+                      <path class="carry_bg_img"
+                        d="M-2903.874,270.334a5.42,5.42,0,0,1-5.341-5.17.713.713,0,0,1-.016-.152c0-.02,0-.038.005-.058,0-.039-.005-.077-.005-.116V238.514a5.434,5.434,0,0,1,5.357-5.5h12.207a5.434,5.434,0,0,1,5.358,5.5v26.325c0,.039-.005.077-.006.116,0,.02.006.038.006.058a.764.764,0,0,1-.016.152,5.421,5.421,0,0,1-5.342,5.17Zm0-1.476h12.207a3.918,3.918,0,0,0,3.776-3.108h-19.76A3.918,3.918,0,0,0-2903.874,268.858Zm-3.881-4.585h19.968V239.8h-19.968Zm.009-25.951h19.95a3.947,3.947,0,0,0-3.872-3.829h-12.207A3.947,3.947,0,0,0-2907.746,238.323Zm9.2-1.228a.738.738,0,0,1-.738-.738.738.738,0,0,1,.738-.738h2.014a.738.738,0,0,1,.738.738.738.738,0,0,1-.738.738Z"
+                        transform="translate(2909.731 -232.518)" />
+                    </svg>
+                  </label>
+                  <label for="carry_phone" class="carry_name">휴대전화</label>
+                </p>
+                <p class="carry_list carry_note">
+                  <input type="checkbox" value="노트북" id="carry_note2" class="checkbox" />
+                  <label for="carry_note2" class="carry_bg">
+                    <svg width="40" height="26.888">
+                      <path class="carry_bg_img"
+                        d="M-2000.763,361.668a2.233,2.233,0,0,1-2.23-2.23v-.032a2.233,2.233,0,0,1,2.23-2.231h.873V340.1a4.328,4.328,0,0,1,4.323-4.323h24.8a4.328,4.328,0,0,1,4.323,4.323v17.071h.22a2.233,2.233,0,0,1,2.23,2.231v.032a2.233,2.233,0,0,1-2.23,2.23Zm-.963-2.263v.032a.964.964,0,0,0,.963.963h34.539a.964.964,0,0,0,.964-.963v-.032a.964.964,0,0,0-.964-.964h-34.539A.964.964,0,0,0-2001.726,359.405Zm3.1-19.3v17.071h30.912V340.1a3.059,3.059,0,0,0-3.055-3.056h-24.8A3.059,3.059,0,0,0-1998.623,340.1Zm1.922.076a.633.633,0,0,1-.633-.634.633.633,0,0,1,.633-.634h26.414a.634.634,0,0,1,.634.634.634.634,0,0,1-.634.634Z"
+                        transform="translate(2003.493 -335.28)" />
+                    </svg>
+                  </label>
+                  <label for="carry_note" class="carry_name">노트북</label>
+                </p>
+                <p class="carry_list carry_camera">
+                  <input type="checkbox" value="카메라" id="carry_camera2" class="checkbox" />
+                  <label for="carry_camera2" class="carry_bg">
+                    <svg width="34.615" height="29.649" viewBox="0 0 34.615 29.649">
+                      <path class="carry_bg_img"
+                        d="M-6180.84,568.093a2.487,2.487,0,0,1-2.322-2.619v-17.6a2.487,2.487,0,0,1,2.322-2.619h5.965l1.656-4.236a2.469,2.469,0,0,1,2.313-1.578h9.1a2.466,2.466,0,0,1,2.312,1.578l1.657,4.236h5.965a2.487,2.487,0,0,1,2.322,2.619v17.6a2.487,2.487,0,0,1-2.322,2.619Zm-1.076-20.215v17.6a1.254,1.254,0,0,0,1.076,1.373h28.971a1.254,1.254,0,0,0,1.076-1.373v-17.6a1.254,1.254,0,0,0-1.076-1.375h-6.215a.608.608,0,0,1-.167.023.619.619,0,0,1-.167-.023h-15.873a.623.623,0,0,1-.168.023.612.612,0,0,1-.167-.023h-6.214A1.254,1.254,0,0,0-6181.916,547.878Zm22.744-2.619-1.479-3.782a1.23,1.23,0,0,0-1.153-.788h-9.1a1.233,1.233,0,0,0-1.154.788l-1.479,3.782Zm-14.819,11.416a7.644,7.644,0,0,1,7.636-7.635,7.643,7.643,0,0,1,7.634,7.635,7.643,7.643,0,0,1-7.634,7.636A7.645,7.645,0,0,1-6173.99,556.675Zm1.246,0a6.4,6.4,0,0,0,6.391,6.39,6.4,6.4,0,0,0,6.39-6.39,6.4,6.4,0,0,0-6.39-6.389A6.4,6.4,0,0,0-6172.745,556.675Zm15.785-6.389a.623.623,0,0,1-.622-.624.622.622,0,0,1,.622-.622h3.143a.623.623,0,0,1,.624.622.624.624,0,0,1-.624.624Z"
+                        transform="translate(6183.662 -538.945)" />
+                    </svg>
+                  </label>
+                  <label for="carry_camera" class="carry_name">카메라</label>
+                </p>
+                <p class="carry_list carry_hdd">
+                  <input type="checkbox" value="저장메체" id="carry_hdd2" class="checkbox" />
+                  <label for="carry_hdd2" class="carry_bg">
+                    <svg width="15.307" height="29.904">
+                      <path class="carry_bg_img"
+                        d="M-3222.142,148.568a6.95,6.95,0,0,1-6.92-6.935V127.35a.755.755,0,0,1,.735-.748h1.216V120.33a.686.686,0,0,1,.706-.665h9.024a.685.685,0,0,1,.675.7V126.6h1.216a.756.756,0,0,1,.735.748v14.283a6.951,6.951,0,0,1-6.921,6.935Zm-5.475-6.935a5.5,5.5,0,0,0,5.475,5.49h.466a5.5,5.5,0,0,0,5.476-5.49V128.048h-11.417Zm1.95-15.031h7.515V121.11h-7.515Zm4.625-1.837V122.9a.722.722,0,0,1,.722-.723.723.723,0,0,1,.723.723v1.866a.722.722,0,0,1-.723.723A.722.722,0,0,1-3221.042,124.765Zm-3.18,0V122.9a.723.723,0,0,1,.723-.723.723.723,0,0,1,.723.723v1.866a.723.723,0,0,1-.723.723A.723.723,0,0,1-3224.221,124.765Z"
+                        transform="translate(3229.563 -119.165)" />
+                    </svg>
+                  </label>
+                  <label for="carry_hdd" class="carry_name">저장메체</label>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="privacy">
+          <h2 class="sub_title">개인정보보호법 시행 안내</h2>
+          <p>0000년 00월 00일 시행된 개인정보보호법에 따라, 방문시 개인정보 수집 및 이용에 대한 동의와 보안 서약 동의를 받고 있습니다. 당사의 경우 전산 / 영상장비 / 저장매체의 반입이 금지되어 있으니 불편하시더라도 협조 부탁드립니다.</p>
+          <div class="privacy_security">
+            <div class="privacy_use">
+              <h4 class="privacy_title">개인정보 수집 및 이용</h4>
+              <div class="privacy_txt">
+                <p>○&nbsp;&nbsp;&nbsp;수집하는 개인정보의 항목 : 회사명, 이름, 휴대전화번호<br>
+                ○&nbsp;&nbsp;&nbsp;개인정보의 수집 및 이용 목적 : 출입보안 및 방문자 출입 절차 운영<br>
+                ○&nbsp;&nbsp;&nbsp;개인정보의 보유기간 : 1년<br>
+                ○&nbsp;&nbsp;&nbsp;방문출입증 사용 시 신분증 또는 면허증을 보관함<br>
+                ○&nbsp;&nbsp;&nbsp;개인정보 수집 및 이용 동의를 거부할 경우 출입이 제한 될 수 있습니다.</p>          
+              </div>
+              <div class="privacy_check">
+                <p class="agree_txt">위의 내용을 이해하고 확인하였습니다.</p>
+                <div class="privacy_agree">
+                  <p>
+                    <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
+                    <input type="checkbox" value="동의" id="agree1" class="checkbox" name="agree" onclick="" />
+                    <label for="agree1">동의</label>
+                  </p>
+                  <p>
+                    <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
+                    <input type="checkbox" value="미동의" id="unconsent1" class="checkbox" onclick="" />
+                    <label for="unconsent1">미동의</label>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="security_use">
+              <h4 class="privacy_title">보안서약</h4>
+              <div class="security_txt">
+                <p>○&nbsp;&nbsp;&nbsp;방문출입증을 발급받은 경우 당일 반납 원칙에 동의함<br>
+                ○&nbsp;&nbsp;&nbsp;방문 중 취득한 정보에 대한 보안 유지에 동의함<br>
+                ○&nbsp;&nbsp;&nbsp;방문출입증 발급 방문자는 휴대폰 카메라에 보안 스티커를 부착하며, 반납 시까지 제거하지 않음<br>
+                ○&nbsp;&nbsp;&nbsp;방문출입증 반납시 휴대폰 카메라 봉인을 임의 제거하였을 경우 휴대폰(스마트기기)에 저장된 동영상 및 사진촬영 내역물을 확인하는 것에 동의함</p>
+              </div>
+              <div class="privacy_check">
+                <p class="agree_txt">위의 내용을 이해하고 확인하였습니다.</p>
+                <div class="privacy_agree">
+                  <p>
+                    <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
+                    <input type="checkbox" id="agree2" name="agree2" class="checkbox" onclick="" />
+                    <label for="agree2">동의</label>
+                  </p>
+                  <p>
+                    <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
+                    <input type="checkbox" id="unconsent2" class="checkbox" name="agree2" onclick="" />
+                    <label for="unconsent2">미동의</label>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sign_form">
+            <div class="agree_data">
+              <h4><span class="year">0000년 <span class="mon">00</span>월 <span class="day">00</span>일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;성명 : <span class="agree_name">테스트</span></h4>
+            </div>
+            <div class="agree_sign">
+              <div class="sign_area">
+                <p>개인정보 수집 및 이용 / 보안 서약 동의 서명</p>
+                <h4>BOX 안에 서명 해주세요.</h4>
+              </div>
+            </div>
+          </div>
+          <p><a id="visit_add" class="visit_add btn" href="/sub/check-in.html"><i class="fa fa-check" aria-hidden="true"></i>방문등록</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
