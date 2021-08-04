@@ -78,6 +78,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .carry_in{width:100%;}
 .carry_out{width:100%;}
 .carry{display:flex; align-items: center; justify-content: space-between; width:100%}
+.option_off{display:none;}
 .carry p{font-size:1.6rem; width:100%; margin-right:10px; text-align:center;}
 .carry p:last-child{margin-right:0;}
 .carry p input[type="checkbox"]{display:none;}
@@ -121,7 +122,8 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .agree_sign{width:100%; background:#fefee5; display:flex;  justify-content: center; align-items: center; text-align:center; height:180px;}
 .sign_area p{color:#cccccc; font-size:1.6rem; font-weight:400; margin-bottom:10px;}
 .sign_area h4{color:#999999; font-size:2.0rem; font-weight:500;}
-.visit_add{width:100%; max-width:700px; margin:30px auto; display:block; background:#849c23; color:#fff; border:none; padding:15px 0; border-radius:50px; font-size:1.6rem; text-align:center;}
+.visit_btn{position:absolute; bottom:0; width:100%; left:0;}
+.visit_add{max-width:700px; width:100%; margin:30px auto; display:block; background:#849c23; color:#fff; border:none; padding:15px 0; border-radius:50px; font-size:1.6rem; text-align:center;}
 .visit_add i{font-size:2.2rem; margin-right:10px;}
 
 /* 환경설정 */
