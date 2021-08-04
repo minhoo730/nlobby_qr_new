@@ -150,6 +150,10 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .toggle-button.round {border-radius: 34px;}
 .toggle-button.round:before {border-radius: 50%;}
 
+.year, .mon, .day, .agree_name{font-weight:300; margin-right:5px;}
+.mon, .day{margin-left:10px;}
+
+
 
 @media screen and (max-width:1040px){
   #content .main_button p{width:50%;}
