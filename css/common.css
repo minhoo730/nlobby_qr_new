@@ -185,7 +185,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
   .main_button p i.build_common{font-size:7rem;}
   .main_button .check_point .icon_area i{font-size:7rem;}
   .main_button p a{font-size:1.6rem;}
-  .visit_btn{position:absolute; bottom:-30px; width:100%; left:0; margin:0;}
+  .visit_btn{position:absolute; bottom:-40px; width:100%; left:0; margin:0;}
   .visit_add{width:90%; margin:0 auto;}
 
 }
