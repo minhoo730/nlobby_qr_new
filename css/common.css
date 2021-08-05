@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import url('font.css');
 
+/* 버튼 공통 적용 색상 */
+:root{--common-color:#849c23;}
+
 /* css reset */
 html, body{width:100%; height:100%; margin:0; padding:0; font-size:10px;}
 body{font-family:'NotoSansKR',sans-serif; position:absolute;}
@@ -20,7 +23,7 @@ header .language{position:absolute; top:15px; right:20px; display:flex; align-it
 header .language .lang_ico{font-size:3.0rem; margin-right:25px;}
 header .language .lang_btn{font-size:1.4rem; font-weight:500; margin-right:0px;}
 header .language .lang_btn a{display:block; background:#f2f2f2; padding:5px 15px;}
-header .language .lang_btn.on a{background:#849c23; color:#fff;}
+header .language .lang_btn.on a{background:var(--common-color); color:#fff;}
 header .language .ko_btn{margin-right:0;}
 
 /* 서브페이지 뒤로가기 버튼 */
@@ -56,7 +59,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .message_txt p{font-size:2.0rem; line-height:3.0rem; font-weight:500; text-align:center;}
 .message_txt p.main_link a{display:block; background:#f2f2f2; border-radius:50px; padding:5px 0; font-size:1.6rem; margin-top:30px;}
 
-.message_txt p.main_link a:hover{background:#849c23; color:#fff;}
+.message_txt p.main_link a:hover{background:var(--common-color); color:#fff;}
 
 
 /* 방문등록 확인 폼 */
@@ -87,7 +90,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .carry p label.carry_name{margin-top:5px;}
 .carry_list .checkbox + label svg .carry_bg_img{fill: #333;}
 .carry_list .checkbox + label{background-color:#f5f5f5; color:#333;}
-.carry_list .checkbox:checked + label{background-color:#849c23;}
+.carry_list .checkbox:checked + label{background-color:var(--common-color);}
 .carry_list .checkbox:checked + label svg .carry_bg_img{fill: #fff;}
 .carry_name{display:block; text-align:center; font-size:1.2rem;}
 .privacy_check > p{font-size: 1.2rem; font-weight: 500; color: #333; display: block; padding: 5px 0;}
@@ -114,7 +117,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .privacy_check > div label i{margin-right:10px; font-size:1.4rem;}
 .check input{display:none;}
 .check + label{background-color:#f5f5f5; color:#333;}
-.check .checkbox:checked + label{background-color:#849c23; color:#fff;}
+.check .checkbox:checked + label{background-color:var(--common-color); color:#fff;}
 
 .sign_form{display:flex; justify-content: center; align-items: center; margin:30px 0;}
 .sign_form > div{width:100%;}
@@ -123,7 +126,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .sign_area p{color:#cccccc; font-size:1.6rem; font-weight:400; margin-bottom:10px;}
 .sign_area h4{color:#999999; font-size:2.0rem; font-weight:500;}
 .visit_btn{position:relative; width:100%; margin:50px 0; text-align:center;}
-.visit_add{width:100%; display:block; background:#849c23; color:#fff; border:none; padding:15px 0; border-radius:50px; font-size:1.6rem; text-align:center;}
+.visit_add{width:100%; display:block; background:var(--common-color); color:#fff; border:none; padding:15px 0; border-radius:50px; font-size:1.6rem; text-align:center;}
 .visit_add i{font-size:2.2rem; margin-right:10px;}
 
 /* 환경설정 */
@@ -148,8 +151,8 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .switch input {display:none;}
 .toggle-button {position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .4s; transition: .4s;}
 .toggle-button:before {position: absolute;content: ""; height: 1.6rem; width: 1.6rem; left: 2px; bottom: 2px; background-color: white; -webkit-transition: .4s; transition: .4s;}
-.switch input:checked + .toggle-button {background-color: #849c23;}
-.switch input:focus + .toggle-button {box-shadow: 0 0 1px #849c23;}
+.switch input:checked + .toggle-button {background-color: var(--common-color);}
+.switch input:focus + .toggle-button {box-shadow: 0 0 1px var(--common-color);}
 .switch input:checked + .toggle-button:before {-webkit-transform: translateX(20px); -ms-transform: translateX(20px); transform: translateX(20px);}
 /* Rounded sliders */
 .toggle-button.round {border-radius: 34px;}
@@ -182,7 +185,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
   .main_button .check_point .icon_area i{font-size:7rem;}
   .main_button p a{font-size:1.6rem;}
   .visit_btn{position:absolute; bottom:0; width:100%; left:0;}
-  .visit_add{width:90%; margin:0px auto; display:block; background:#849c23; color:#fff; border:none; padding:15px 0; border-radius:50px; font-size:1.6rem; text-align:center;}
+  .visit_add{width:90%; margin:0 auto;}
 
 }
 @media screen and (max-width:600px){
