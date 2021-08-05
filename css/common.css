@@ -81,7 +81,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .carry_in{width:100%;}
 .carry_out{width:100%;}
 .carry{display:flex; align-items: center; justify-content: space-between; width:100%}
-/* .option_off{display:none;} */
+.option_off{display:none;}
 .carry p{font-size:1.6rem; width:100%; margin-right:10px; text-align:center;}
 .carry p:last-child{margin-right:0;}
 .carry p input[type="checkbox"]{display:none;}
