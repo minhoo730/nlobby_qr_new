@@ -65,7 +65,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 /* 방문등록 확인 폼 */
 #form_content{margin:0 auto; width:100%; padding-top:60px;}
 .sub_wrap #form_content{margin:0px auto;}
-.visit_check{padding:30px 20px; border-bottom:1px solid #333;}
+.visit_check{padding:20px; border-bottom:1px solid #333;}
 .sub_title{font-size:1.8rem; color:#333; margin-bottom:10px;}
 .visit_form{display:flex; align-items:center; width:100%;}
 .visit_form > div{display:flex; flex-wrap: wrap; flex-direction: row; width:100%;}
@@ -95,14 +95,14 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .carry_name{display:block; text-align:center; font-size:1.2rem;}
 .privacy_check > p{font-size: 1.2rem; font-weight: 500; color: #333; display: block; padding: 5px 0;}
 .carry_out{margin-left:20px;}
-.privacy{padding:30px 20px;}
+.privacy{padding:20px;}
 
 .privacy .sign{font-size:1.2rem;}
 .privacy_title{font-size:1.4rem; margin-bottom:10px;}
 .privacy_security{display:flex; width:100%; align-items: flex-start; justify-self:center; margin-top:20px; position:relative;}
 .privacy_security > div{width:100%;}
 .privacy_use {margin-right:20px;}
-.privacy_txt, .security_txt{display:inline-block; height:150px; overflow-y:auto;}
+.privacy_txt, .security_txt{display:inline-block; height:140px; overflow-y:auto;}
 .privacy_txt p, .security_txt p{font-size:1.2rem; line-height:2.2rem;}
 /* .privacy_check{position:absolute; bottom:0;} */
 
@@ -171,7 +171,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
   .main_button .check_point .icon_area i{font-size:10rem;}
   /* .privacy_security{flex-direction: column; height:auto;} */
   .sign_form{flex-direction: column; height:auto; margin:0;}
-  .agree_data{margin:40px 0;}
+  .agree_data{margin:30px 0;}
   .carry{flex-wrap: wrap;}
   .carry p{margin:0; padding:0; position:relative; width:25%;}
   .carry p input[type="checkbox"]{position:absolute; left:15px; top:22px;}
