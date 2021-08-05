@@ -62,8 +62,8 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 /* 방문등록 확인 폼 */
 #form_content{margin:0 auto; width:100%; padding-top:60px;}
 .sub_wrap #form_content{margin:0px auto;}
-.visit_check{padding:0 20px;}
-.sub_title{font-size:1.8rem; color:#333; margin-top:20px; margin-bottom:10px;}
+.visit_check{padding:30px 20px; border-bottom:1px solid #333;}
+.sub_title{font-size:1.8rem; color:#333; margin-bottom:10px;}
 .visit_form{display:flex; align-items:center; width:100%;}
 .visit_form > div{display:flex; flex-wrap: wrap; flex-direction: row; width:100%;}
 .visit_form .left_form{padding-right:0;}
@@ -73,7 +73,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .visit_form > div > div input[type="text"]{width:100%; max-width:50%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.2rem; font-weight:300; text-indent:10px;}
 
 /* 반입 물품 선택 박스 */
-.check_list{display:flex; width:100%; padding-bottom:20px; border-bottom:1px solid #333; align-items: center; justify-content: center;}
+.check_list{display:flex; width:100%; align-items: center; justify-content: center;}
 .list_title{margin-top:20px; margin-bottom:10px; font-size:1.4rem;}
 .carry_in{width:100%;}
 .carry_out{width:100%;}
@@ -92,7 +92,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .carry_name{display:block; text-align:center; font-size:1.2rem;}
 .privacy_check > p{font-size: 1.2rem; font-weight: 500; color: #333; display: block; padding: 5px 0;}
 .carry_out{margin-left:20px;}
-.privacy{padding:0 20px; margin-top:20px;}
+.privacy{padding:30px 20px;}
 
 .privacy .sign{font-size:1.2rem;}
 .privacy_title{font-size:1.4rem; margin-bottom:10px;}
@@ -122,13 +122,13 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .agree_sign{width:100%; background:#fefee5; display:flex;  justify-content: center; align-items: center; text-align:center; height:180px;}
 .sign_area p{color:#cccccc; font-size:1.6rem; font-weight:400; margin-bottom:10px;}
 .sign_area h4{color:#999999; font-size:2.0rem; font-weight:500;}
-.visit_btn{position:absolute; bottom:0; width:100%; left:0;}
-.visit_add{max-width:700px; width:100%; margin:30px auto; display:block; background:#849c23; color:#fff; border:none; padding:15px 0; border-radius:50px; font-size:1.6rem; text-align:center;}
+.visit_btn{position:relative; width:100%; margin:50px 0; text-align:center;}
+.visit_add{width:100%; display:block; background:#849c23; color:#fff; border:none; padding:15px 0; border-radius:50px; font-size:1.6rem; text-align:center;}
 .visit_add i{font-size:2.2rem; margin-right:10px;}
 
 /* 환경설정 */
 #wrap.set_bg{background:#ebebf3;}
-.set_bg #content .con_area{max-width:700px; margin:0 auto; width:100%; background:#fff; padding:20px; border-radius:10px;}
+.set_bg #content .con_area{max-width:678px; margin:0 auto; width:100%; background:#fff; padding:20px; border-radius:10px;}
 
 .setup_list{display:flex; width:100%;}
 .setup_list > div{width:100%;}
@@ -181,6 +181,8 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
   .main_button p i.build_common{font-size:7rem;}
   .main_button .check_point .icon_area i{font-size:7rem;}
   .main_button p a{font-size:1.6rem;}
+  .visit_btn{position:absolute; bottom:0; width:100%; left:0;}
+  .visit_add{width:90%; margin:0px auto; display:block; background:#849c23; color:#fff; border:none; padding:15px 0; border-radius:50px; font-size:1.6rem; text-align:center;}
 
 }
 @media screen and (max-width:600px){
