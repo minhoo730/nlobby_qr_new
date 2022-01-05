@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엔로비 QR버전</title>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- Jquery 추가_21.07.27 -->
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/JavaScript" src="../js/script.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap" class="sub_wrap">
+      <header>
+        <div class="back_btn">
+          <a href="javascript:history.back();"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="company_name">
+          <h4><img src="../img/logo.svg"></h4>
+        </div>
+        <div class="language">
+          <!--
+                <p class="lang_ico"><i class="fa fa-language" aria-hidden="true"></i></p>
+              -->
+          <p class="en_btn lang_btn on"><a href="#">KO</a></p>
+          <p class="ko_btn lang_btn"><a href="#">EN</a></p>
+        </div>
+      </header>
+      <div id="form_content" class="visit-check">
+        <div class="mobile-visit">
+          <div class="visit-title">
+            <h2 class="sub_title">방문객 정보확인</h2>
+            <p class="sub_msg">방문객 정보를 확인 후 방문등록 버튼을 눌러주세요.</p>
+          </div>
+          <div class="user-visit">
+            <div class="visit_card">
+              <div class="user_place">
+                <!-- <h4 class="label">이름</h4> -->
+                <p class="data user-name">이민호</p>
+                <!--{{visitFormItem.accessiblePlace.name}} -->
+                <p class="data user-phone">010-1234-1234</p>
+                <!--{{visitFormItem.userData}} -->
+              </div>
+              <div class="sub_place">
+                <div class="reserv-num">
+                  <h4 class="label">예약번호</h4>
+                  <p class="data">123456</p>
+                  <!--{{visitFormItem.reserveNo}} -->
+                </div>              
+                <div class="user_car">
+                  <h4 class="label">소속회사</h4>
+                  <p class="data">(주)엔로비</p>
+                  <!--{{visitFormItem.carNumber}} -->
+                </div>
+                <div class="visit-purpose">
+                  <h4 class="label">방문목적</h4>
+                  <p class="data">업무협의 / 기타</p>
+                  <!--{{visitFormItem.dayData}} -->
+                </div>
+                <div class="visit-start">
+                  <h4 class="label">방문시작</h4>
+                  <p class="data">2022. 01. 04. 09:00</p>
+                  <!--{{visitFormItem.departmentData}} -->
+                </div>
+                <div class="visit-end">
+                  <h4 class="label">방문종료</h4>
+                  <p class="data">2022. 01. 04. 18:00</p>
+                  <!--{{visitFormItem.departmentData}} -->
+                </div>
+              </div>
+              <p class="confirm-btn">
+                <a id="visit_add" class="confirm btn" href="../sub/check-in.html"><i class="fa fa-check" aria-hidden="true"></i>방문등록</a>
+              </p>
+            </div>
+            <p class="cancel-btn">
+              <a id="visit_cancel" class="confirm-cancel btn" href="javascript:history.back();">취소하기</a>
+            </p>
+          </div>
+          <!-- <div class="visit_btn">
+            <a id="visit_cancel" class="visit_cancel btn" href="javascript:history.back();">취소</a>
+            <a id="visit_add" class="visit_add btn" href="../sub/check-in.html"><i class="fa fa-check" aria-hidden="true"></i>방문등록</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
