@@ -99,7 +99,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 #form_content{margin:0 auto; width:100%; padding-top:60px; margin-bottom:80px;}
 /* .sub_wrap #form_content{margin:0px auto;} */
 .visit_check{padding:20px; border-bottom:1px solid #333;}
-.sub_title{font-size:2.0rem; color:#849c23; margin-bottom:10px;}
+.sub_title{font-size:2.0rem; color:#849c23; margin-bottom:4px;}
 .sub_msg{font-size:1.4rem;}
 .visit_form{display:flex; align-items:center; width:100%;}
 .visit_form > div{display:flex; flex-wrap: wrap; flex-direction: row; width:100%;}
@@ -303,7 +303,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .sub_place > div p{font-size:1.6rem; font-weight:400; margin-left:10px;}
 
 .confirm-btn{width:100%; display:flex; flex-direction: column; align-items: center; margin-top:20px; background:#b3d03e;}
-.confirm-btn a{font-size:2.0rem; width:100%; text-align:center; padding:10px 0; color:#fff;}
+.confirm-btn a{font-size:2.0rem; width:100%; text-align:center; padding:10px 0; color:#fff; font-weight:500;}
 .confirm-btn a i{margin-right:10px;}
 .cancel-btn{text-align:center; margin:15px 0; border-top:1px solid #ddd; padding-top:15px;}
 .cancel-btn a{font-size:1.6rem; color:#999; display:block;}
