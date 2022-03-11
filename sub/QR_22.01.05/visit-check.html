@@ -82,7 +82,7 @@
                 </div>
               </div>
               <p class="confirm-btn">
-                <button id="visit_add" class="confirm btn" onClick="visit_add()">확인</button>
+                <button id="visit_add" class="confirm btn" onclick="visit_add()">확인</button>
               </p>
             </div>
             <p class="cancel-btn">
@@ -106,22 +106,22 @@
           <div class="modal-content">
             <div class="modal-check">
               <div class="check-area">
-                <input id="check-list1" name="checkList" type="checkbox" class="checkbox" value="안내데스크에서 방문증 교환후 체온측정"/>
+                <input id="check-list1" name="checkbox" type="checkbox" class="checkbox" value="안내데스크에서 방문증 교환후 체온측정"/>
                 <label for="check-list1" class="colorBg"></label>
                 <label for="check-list1" class="labelName">안내데스크에서 방문증 교환후 체온측정</label>
               </div>
               <div class="check-area">
-                <input id="check-list2" name="checkList" type="checkbox" class="checkbox" value="출입 전/후 손 세정"/>
+                <input id="check-list2" name="checkbox" type="checkbox" class="checkbox" value="출입 전/후 손 세정"/>
                 <label for="check-list2" class="colorBg"></label>
                 <label for="check-list2" class="labelName">출입 전/후 손 세정</label>
               </div>
               <div class="check-area">
-                <input id="check-list3" name="checkList" type="checkbox" class="checkbox" value="반드시 마스크 착용후 출입"/>
+                <input id="check-list3" name="checkbox" type="checkbox" class="checkbox" value="반드시 마스크 착용후 출입"/>
                 <label for="check-list3" class="colorBg"></label>
                 <label for="check-list3" class="labelName">반드시 마스크 착용후 출입</label>
               </div>
               <div class="check-area">
-                <input id="check-list4" name="checkList" type="checkbox" class="checkbox" value="사무실 및 공장내 출입 제한 (접견실 이용)"/>
+                <input id="check-list4" name="checkbox" type="checkbox" class="checkbox" value="사무실 및 공장내 출입 제한 (접견실 이용)"/>
                 <label for="check-list4" class="colorBg"></label>
                 <label for="check-list4" class="labelName">사무실 및 공장내 출입 제한 (접견실 이용)</label>
               </div>
@@ -131,36 +131,20 @@
             <button id="visit-finish" class="visit-finish btn" href="#" disabled>방문등록</button>
           </div>
         </div>
-        <button class="modal-close btn" onclick="modalClose()">닫기</button>
+        <button class="modal-close btn" onClick="modalClose()">닫기</button>
       </div>
       <div class="modal-bg"></div>
     </div>
   </body>
 </html>
 <script>
-  'use strict';
   let modal = document.getElementById('modal-name');
+  let modalBgClose = document.getElementById('modal-bg');
   const visit_add = () => {
-    modal.classList.add('on')
+    modal.classList.add('on');
   }
 
   const modalClose = () => {
-    modal.classList.remove('on')
+    modal.classList.remove('on');
   }
-
-  // const getCheckBox = () => {
-  //   // 선택된 목록 가져오기
-  //   const query = 'input[name="checkList"]:checked';
-  //   const selectedEls = document.querySelectorAll(query);
-  //   // 선택된 목록에서 value 찾기
-
-  //   let result = '';
-  //   selectedEls.forEach((i) => {
-  //     result += i.value + ' ';
-  //   });
-  //   // 출력
-  //   console.log(result)
-  // }
-
-
-  </script>
+</script>

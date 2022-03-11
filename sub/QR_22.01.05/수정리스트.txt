@@ -1,0 +1,4 @@
+1. visit-check.html : 방문객 정보 확인 및 리스트체크 페이지 - 기존 방문등록 확인의 서명 및 기타 동의 버튼등 제외한 신규 페이지 제작
+2. setup.html : select 박스가 추가된 레이블 생성
+3. reservation.html : 예약번호 입력 폼 레이아웃 수정
+4. enter-exit.html : 상단 헤더 영역 이전버튼 추가

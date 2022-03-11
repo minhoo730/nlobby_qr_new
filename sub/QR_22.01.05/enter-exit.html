@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nlobby QRcode</title>
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <!-- Jquery 추가_21.07.27 -->
+  <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+  <script type="text/JavaScript" src="../js/script.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="back_btn">
+        <!-- 뒤로가기 버튼 추가 22.01.04 -->
+        <a href="javascript:history.back();"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      </div>
+      <div class="company_name">
+        <h4><img src="../img/logo.svg"></h4>
+      </div>
+      <div class="language">
+        <!--
+              <p class="lang_ico"><i class="fa fa-language" aria-hidden="true"></i></p>
+            -->
+        <p class="en_btn lang_btn on"><a href="#">KO</a></p>
+        <p class="ko_btn lang_btn"><a href="#">EN</a></p>
+      </div>
+    </header>
+    <div id="content" class="visitors">
+      <div class="visitors-list">
+        <h2 class="title">입문자리스트 조회</h2>
+        <form action="" id="table-form" onsubmit="return false">
+          <div class="list-search">
+            <label class="search-label">
+              <input type="search" id="search-input" placeholder="방문객 이름 또는 전화번호 입력" value="" aria-describedby="search-hint"/>
+            </label>
+            <button type="submit">검색</button>
+          </div>
+          <div class="list-table">
+            <div class="table-title">
+              <h4 class="name">이름</h4>
+              <h4 class="phone">전화번호</h4>
+              <h4 class="location">방문장소</h4>
+              <h4 class="state">상태</h4>
+              <h4 class="intime">입문시간</h4>
+              <h4 class="endtime">출문시간</h4>
+              <h4 class="button"></h4>
+            </div>
+            <div class="table-data">
+              <div class="data" id="data">
+                <p class="name">이민호</p>
+                <p class="phone">010-1234-1234</p>
+                <p class="location">부산 / 경남지역본부</p>
+                <p class="state in"><span class="creative"></span>출문</p>
+                <p class="intime">21. 12. 22 / 09:00</p>
+                <p class="endtime">21. 12. 22 / 18:00</p>
+                <p class="button">
+                  <button class="in-button" disabled>출문완료</button>
+                </p>
+              </div>
+              <div class="data" id="data">
+                <p class="name">이민호</p>
+                <p class="phone">010-1234-1234</p>
+                <p class="location">부산 / 경남지역본부</p>
+                <p class="state out"><span class="creative"></span>입문</p>
+                <p class="intime">21. 12. 22 / 09:00</p>
+                <p class="endtime">21. 12. 22 / 18:00</p>
+                <p class="button">
+                  <button class="in-button">출문하기</button>
+                </p>
+              </div>
+              <div class="data" id="data">
+                <p class="name">이민호</p>
+                <p class="phone">010-1234-1234</p>
+                <p class="location">부산 / 경남지역본부</p>
+                <p class="state in"><span class="creative"></span>출문</p>
+                <p class="intime">21. 12. 22 / 09:00</p>
+                <p class="endtime">21. 12. 22 / 18:00</p>
+                <p class="button">
+                  <button class="in-button" disabled>출문완료</button>
+                </p>
+              </div>
+              <div class="data" id="data">
+                <p class="name">이민호</p>
+                <p class="phone">010-1234-1234</p>
+                <p class="location">부산 / 경남지역본부</p>
+                <p class="state out"><span class="creative"></span>입문</p>
+                <p class="intime">21. 12. 22 / 09:00</p>
+                <p class="endtime">21. 12. 22 / 18:00</p>
+                <p class="button">
+                  <button class="in-button">출문하기</button>
+                </p>
+              </div>
+              <div class="data" id="data">
+                <p class="name">이민호</p>
+                <p class="phone">010-1234-1234</p>
+                <p class="location">부산 / 경남지역본부</p>
+                <p class="state in"><span class="creative"></span>출문</p>
+                <p class="intime">21. 12. 22 / 09:00</p>
+                <p class="endtime">21. 12. 22 / 18:00</p>
+                <p class="button">
+                  <button class="in-button" disabled>출문완료</button>
+                </p>
+              </div>
+              <div class="data" id="data">
+                <p class="name">이민호</p>
+                <p class="phone">010-1234-1234</p>
+                <p class="location">부산 / 경남지역본부</p>
+                <p class="state out"><span class="creative"></span>입문</p>
+                <p class="intime">21. 12. 22 / 09:00</p>
+                <p class="endtime">21. 12. 22 / 18:00</p>
+                <p class="button">
+                  <button class="in-button">출문하기</button>
+                </p>
+              </div>
+              <div class="data" id="data">
+                <p class="name">이민호</p>
+                <p class="phone">010-1234-1234</p>
+                <p class="location">부산 / 경남지역본부</p>
+                <p class="state in"><span class="creative"></span>출문</p>
+                <p class="intime">21. 12. 22 / 09:00</p>
+                <p class="endtime">21. 12. 22 / 18:00</p>
+                <p class="button">
+                  <button class="in-button" disabled>출문완료</button>
+                </p>
+              </div>
+              <div class="data" id="data">
+                <p class="name">이민호</p>
+                <p class="phone">010-1234-1234</p>
+                <p class="location">부산 / 경남지역본부</p>
+                <p class="state out"><span class="creative"></span>입문</p>
+                <p class="intime">21. 12. 22 / 09:00</p>
+                <p class="endtime">21. 12. 22 / 18:00</p>
+                <p class="button">
+                  <button class="in-button">출문하기</button>
+                </p>
+              </div>
+              <div class="data" id="data">
+                <p class="name">이민호</p>
+                <p class="phone">010-1234-1234</p>
+                <p class="location">부산 / 경남지역본부</p>
+                <p class="state in"><span class="creative"></span>출문</p>
+                <p class="intime">21. 12. 22 / 09:00</p>
+                <p class="endtime">21. 12. 22 / 18:00</p>
+                <p class="button">
+                  <button class="in-button" disabled>출문완료</button>
+                </p>
+              </div>
+              <div class="data" id="data">
+                <p class="name">이민호</p>
+                <p class="phone">010-1234-1234</p>
+                <p class="location">부산 / 경남지역본부</p>
+                <p class="state out"><span class="creative"></span>입문</p>
+                <p class="intime">21. 12. 22 / 09:00</p>
+                <p class="endtime">21. 12. 22 / 18:00</p>
+                <p class="button">
+                  <button class="in-button">출문하기</button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="page-numbering">
+            <p class="prev-btn"><a href="#"><</a></p>
+            <p class="number-btn on"><a href="#">1</a></p>
+            <p class="number-btn"><a href="#">2</a></p>
+            <p class="number-btn"><a href="#">3</a></p>
+            <p class="number-btn"><a href="#">4</a></p>
+            <p class="number-btn"><a href="#">5</a></p>
+            <p class="next-btn"><a href="#">></a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+</script>
