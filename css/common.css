@@ -5,7 +5,7 @@
 :root{--common-color:#849c23;}
 
 /* css reset */
-html, body{width:100%; height:100%; margin:0; padding:0; font-size:10px;}
+html, body{width:100%; height:100%; margin:0; padding:0; font-size:10px; box-sizing: border-box;}
 body{font-family:'NotoSansKR',sans-serif;}
 html, header, section, footer, body, header, footer, p, a, h1, h2, h3, h4, h5, h6, div, span, strong, ul, li, dl, dt, dd, table, tr, td, b, input, button, label, b, textarea, select, option{margin:0; padding:0; color:#333; text-decoration:blink; letter-spacing:-1.0px; font-family:'NotoSansKR',sans-serif; list-style:none;}
 input{ outline:unset;}
@@ -59,7 +59,7 @@ header .back_btn a i{margin-right:7px;}
 .main_button p.main_btn a .chk_ico{margin-bottom:10px;}
 .chk_in_ico .chk_com{fill: #333;}
 .main_button .main_btn a span.title{font-size:2.4rem; display:block; font-weight:500;}
-.main_button .main_btn a span.sub_txt{font-size:1.6rem; margin-top:15px; font-weight:500;}
+.main_button .main_btn a span.sub_txt{font-size:1.6rem; margin-top:10px; font-weight:500;}
 
 /* #wrap a:active {background:#f2f2f2;} */
 .main_button p:last-child{margin-right:0;}
@@ -70,12 +70,12 @@ header .back_btn a i{margin-right:7px;}
 .main_button p i.arrow_left{display:inline-block; font-size:7.0rem;}
 .main_button p i.arrow_right{display:inline-block; font-size:7.0rem;}
 
-
-.bottom-btn{width:100%; height:100px; border-radius:5px; overflow:hidden; margin-bottom:15px;}
+/* 22.03.11 방문신청 버튼 리뉴얼 */
+.bottom-btn{width:100%; height:100px; border-radius:10px; overflow:hidden; margin-bottom:15px; box-sizing: border-box;}
 .bottom-btn p.visitor{height:100%; background:#849c23; display:flex; align-items: center; justify-content: flex-start;}
-.bottom-btn p.visitor a {padding:20px; width:100%; display:flex; align-items: center; justify-content: center; }
-.bottom-btn p.visitor a span.title{color:#fff; font-size:2.8rem; width:100%; text-align:left; position:relative; font-weight:500;}
-.bottom-btn p.visitor a i{color:#fff; font-size:30px;}
+.bottom-btn p.visitor a {padding:0 20px; width:100%; display:flex; flex-direction:column; align-items: flex-start; justify-content: center; color:#fff; font-size:1.4rem; position:relative;}
+.bottom-btn p.visitor a span.title{color:#fff; font-size:2.0rem; width:100%; text-align:left; font-weight:500; margin-bottom:5px;}
+.bottom-btn p.visitor a .right-arrow{color:#fff; font-size:2.2rem; overflow:hidden; position:absolute; right:0px; top:-20px; background:#b3d03e; width:50px; height:90px; display:flex; align-items: center; justify-content: center;}
 
 
 footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
@@ -437,7 +437,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
   .main_button p .chk_ico path{display:none;}
   .main_button p .chk_ico g{display:none;}
   #content .main_button .main_btn a svg{max-width:80px; height:50px; margin-bottom:0;}
-  .main_button .main_btn a span.title{font-size:2.0rem;}
+  .main_button .main_btn a span.title{font-size:2.2rem;}
   .main_button .main_btn a span.sub_txt{font-size:1.4rem; margin-top:10px;}
   .main_button p.check_in .chk_ico{background:url('../img/check_in_ico.svg')no-repeat; background-size:75px;}
   .main_button p.check_out .chk_ico{background:url('../img/check_out_ico.svg')no-repeat; background-size:75px;}
