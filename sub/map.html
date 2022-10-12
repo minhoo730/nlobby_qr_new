@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="fullScreenMove()">버튼</button>
+  <div id="map" style="width:900px;height:700px;"></div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5f0ead9774ec17aa1f2d04547f3a6de2&libraries=services"></script>
+  <script>
+    var mapContainer = document.getElementById('map'); // 지도를 표시할 div
+    mapOption = {
+      center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표 서울 종로
+      level : 12// 지도의 확대 레벨(1~14)
+    };
+    // 지도를 표시할 div와 지도 옵션으로 지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption);
+    // 지도에 확대 축소 컨트롤을 생성합니다.
+    var zoomControl = new kakao.maps.ZoomControl();
+    // 지도의 우측에 확대 축소 컨트롤을 추가합니다.
+    map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+    function openFullScreen(elem) {
+      var elem = document.getElementById(elem);
+      if(!elem) alert("specify element for full screen.")
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem.msRequestFullscreen();
+      }
+    }
+
+    function fullScreenMove(){
+      var mapContainer = document.getElementById('map');
+        // 사이즈를 정해 줘야 지도의 센터를 설정할 수 있습니다.
+      mapContainer.style.width = screen.width + 'px';
+      mapContainer.style.height = screen.height + 'px';
+
+      openFullScreen('map');
+      // 이동할 위도 경도 위치를 생성합니다 
+      var moveLatLon = new kakao.maps.LatLng(37.566826, 126.9786567);
+      // 지도 레벨 설정( 1~14 낮을 수록 확대)
+      map.setLevel(9); // 현재 맵 보다 확대해서 표시	
+      map.relayout();  // 지도의 레이 아웃을 재 정렬합니다.
+      map.setCenter(moveLatLon); // 지도 중심을 이동 시킵니다
+    };
+
+    document.addEventListener('fullscreenchange', exitHandler);
+    document.addEventListener('webkitfullscreenchange', exitHandler);
+    document.addEventListener('mozfullscreenchange', exitHandler);
+    document.addEventListener('MSFullscreenChange', exitHandler);
+
+    function exitHandler() {
+      if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+        // 현재 맵
+        var mapContainer = document.getElementById('map');
+        mapContainer.style.width = '900px'; // 원래 사이즈로 복귀
+        mapContainer.style.height = '700px';
+        // 이동할 위도 경도 위치를 생성합니다 
+        var moveLatLon = new kakao.maps.LatLng(37.566826, 126.9786567);
+        // 지도 레벨 설정( 1~14 낮을 수록 확대)
+        map.setLevel(12);
+        map.relayout(); // 지도의 레이아웃을 재 정렬합니다.
+        map.setCenter(moveLatLon); // 지도 중심을 이동 시킵니다
+      }
+    }
+  </script>
+
+
+</body>
+</html>

@@ -352,7 +352,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .sub_place > div h4{font-size:1.6rem; font-weight:600; width:100%; max-width:70px;}
 .sub_place > div p{font-size:1.6rem; font-weight:400; margin-left:10px;}
 
-.confirm-btn{width:100%; display:flex; flex-direction: column; align-items: center; margin-top:0px; background:#b3d03e;}
+.confirm-btn{width:100%; display:flex; flex-direction: column; align-items: center; margin-top:20px; background:#b3d03e;}
 .confirm-btn button{font-size:2.0rem; width:100%; background:#b3d03e; border:none; text-align:center; padding:10px 0; color:#fff; font-weight:500;}
 .confirm-btn button i{margin-right:10px;}
 .cancel-btn{text-align:center; margin:15px 0; border-top:1px solid #ddd; padding-top:15px;}
@@ -377,13 +377,13 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .modal-common .modal-close{background:none; color:#fff; border:none; width:100%; margin:15px 0 10px 0; font-size:1.6rem;}
 .modal-common .modal-bg{width:100%; height:100%; background:rgba(0,0,0,0.8);position:absolute; top:0; left:0; z-index:1;}
 
-.add-info-area{margin-top:20px; border-top:1px dotted #eee;}
+.add-info-area{margin-top:20px;}
 .add-info-area .btn-align{text-align:center;}
 .add-info-area .btn-align .add-in-btn{border:none; background:#fff; border-radius: 6px; font-size:1.6rem; padding:4px 10px;}
 .add-info-area .btn-align .close{margin-top:10px;}
 .add-info{position:absolute; border-radius: 4px; background:#f1f1f1; width:100%; left:0; bottom:0px; visibility: hidden; overflow:overlay; max-height:364px;}
 .add-info.on{visibility:visible;}
-.add-info-content{padding:14px; margin-bottom:0px;}
+.add-info-content{padding:14px; margin-bottom:10px;}
 .add-info-area .add-item{margin-bottom:14px;}
 .add-info-area .add-item:last-child{margin-bottom:0px;}
 .add-info-area > div h4{font-size:1.6rem;}
